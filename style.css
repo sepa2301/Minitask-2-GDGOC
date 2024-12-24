@@ -1,0 +1,89 @@
+body {
+    font-family: 'Gill Sans';
+    background-color: rgb(46, 46, 46);
+  }
+  .navbar h2 {
+    color: rgb(255, 255, 255);
+  }
+  .main-content{
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(46, 46, 46);
+    padding: 10px;
+  }
+  .navbar .right {
+    background-color: rgb(53, 53, 53);
+    padding: 5px;
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar .right a {
+    font-size: x-large;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  
+  .navbar .right img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .container-grid {
+    display: grid;
+    grid-template-areas:
+      'first first second'
+      'first first third'
+      'six four third'
+      'five seven seven'
+      'five seven seven'
+      'eight eight nine'
+      'eight eight nine';
+    grid-gap: 16px;
+    width: 100%;
+  }
+  
+  
+  .gambar-layout {
+    position: relative;
+  }
+  
+  .gambar-layout img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+  }
+  
+  #first {
+    grid-area: first;
+  }
+  #second {
+    grid-area: second;
+  }
+  #third {
+    grid-area: third;
+  }
+  #five {
+    grid-area: five;
+  }
+  #four {
+    grid-area: four;
+  }
+  #six {
+    grid-area: six;
+  }
+  #seven {
+    grid-area: seven;
+  }
+  #eight {
+    grid-area: eight;
+  }
+  #nine {
+    grid-area: nine;
+  }
