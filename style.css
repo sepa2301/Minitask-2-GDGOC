@@ -6,7 +6,6 @@ body {
     color: rgb(255, 255, 255);
   }
   .main-content{
-    max-width: 90%;
     margin: 0 auto;
     padding: 0 16px;
   }
@@ -17,7 +16,6 @@ body {
     padding: 10px;
   }
   .navbar .right {
-    background-color: rgb(53, 53, 53);
     padding: 5px;
     width: 280px;
     display: flex;
@@ -86,4 +84,58 @@ body {
   }
   #nine {
     grid-area: nine;
+  }
+
+  @media only screen and (max-width: 1100px) {
+    .main-content {
+      max-width: 100%;
+      padding: 0 auto;
+    }
+    .container-grid {
+      max-width: 100%;
+      grid-template-areas:
+        'first'
+        'second five'
+        'third four'
+        'seven seven'
+        'six eight'
+        'nine nine';
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .container-grid {
+      margin-top: 5px;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      padding: 5px;
+    }
+    .navbar .right {
+      width: 200px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .navbar .right a {
+      font-size: smaller;
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+    }
+    
+    .navbar .right img {
+      width: 20px;
+      height: 20px;
+    }
+    .container-grid {
+      grid-template-areas:
+        'first first'
+        'second second'
+        'third third'
+        'four five'
+        'seven seven'
+        'six six'
+        'eight eight'
+        'nine nine';
+    }
   }
